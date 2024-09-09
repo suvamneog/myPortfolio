@@ -64,7 +64,7 @@ header {
   justify-content: center;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero h1 {
@@ -116,6 +116,7 @@ header {
 
 .cta-button {
   display: inline-block;
+  position: relative;  
   background-color: var(--background-color);
   color: var(--text-color);
   padding: 0.8rem 2rem;
@@ -124,6 +125,7 @@ header {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  z-index: 10;
 }
 
 .cta-button:hover {
@@ -289,10 +291,6 @@ header {
       font-size: 1rem;
   }
 }
-
-
-
-
 
 
 .technologies {

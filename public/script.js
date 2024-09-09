@@ -45,12 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animate background text on scroll
-    const backgroundText = document.querySelector('.background-text');
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.pageYOffset;
-        backgroundText.style.transform = `translateX(-${scrollPosition * 0.5}px)`;
-    });
-
+    window.addEventListener('scroll', function() {
+        let scrollPosition = window.scrollY;
+        let backgroundText = document.querySelector('.background-text');
+        
+        // Move the background-text based on scroll position
+        backgroundText.style.transform = `translateX(${scrollPosition * -0.5}px)`;
+      });
+      
     // Parallax effect for About card
     const aboutCard = document.querySelector('.about-card');
     window.addEventListener('scroll', () => {
