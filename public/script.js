@@ -1,6 +1,9 @@
 document.getElementById('contact-link').addEventListener('click', function() {
     window.location.href = 'https://github.com/suvamneog';
 });
+document.getElementById('cta-button').addEventListener('click', function() {
+    window.location.href = 'https://www.linkedin.com/in/suvam-j-neog-b48471321/';
+});
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const navLinks = navbar.querySelectorAll('a');
